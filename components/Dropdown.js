@@ -1,9 +1,9 @@
 import { useState } from "react";
-const Dropdown = (industry, setIndustry, selected, setSelected) => {
+const Dropdown = ({industry, setIndustry, selectedDropdown, setSelectedDropdown}) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => setIsOpen(prev => !prev);
     const handleSelect = (item) => {
-        setSelected(item);
+        setSelectedDropdown(item);
         setIsOpen(false);
     }
     const items = [
