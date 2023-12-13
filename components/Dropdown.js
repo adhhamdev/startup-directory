@@ -1,8 +1,6 @@
-"use client"
 import { useState } from "react";
-const Dropdown = () => {
+const Dropdown = (industry, setIndustry, selected, setSelected) => {
     const [isOpen, setIsOpen] = useState(false);
-    const [selected, setSelected] = useState(null);
     const toggleDropdown = () => setIsOpen(prev => !prev);
     const handleSelect = (item) => {
         setSelected(item);
