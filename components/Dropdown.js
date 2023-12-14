@@ -1,5 +1,5 @@
 import { useState } from "react";
-const Dropdown = ({industry, setIndustry, selectedDropdown, setSelectedDropdown}) => {
+const Dropdown = ({ industry, setIndustry, selectedDropdown, setSelectedDropdown }) => {
     const [isOpen, setIsOpen] = useState(false);
     const toggleDropdown = () => setIsOpen(prev => !prev);
     const handleSelect = (item) => {
@@ -7,7 +7,7 @@ const Dropdown = ({industry, setIndustry, selectedDropdown, setSelectedDropdown}
         setIsOpen(false);
     }
     const items = [
-        {id: 0, value: "All"},
+        { id: 0, value: "All" },
         { id: 1, value: "SaaS" },
         { id: 2, value: "Mobile" },
         { id: 3, value: "Web" },
@@ -32,7 +32,7 @@ const Dropdown = ({industry, setIndustry, selectedDropdown, setSelectedDropdown}
         <div>
             <div className="relative inline-block text-left w-36">
                 <button type="button" id="dropdownBtn" className="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4     py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none" onClick={toggleDropdown}>
-                    {selected ? selected.value : "Category"}
+                    {selectedDropdown || "Category"}
                     <svg className="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                         <path fillRule="evenodd" clipRule="evenodd" d="M6.293 6.293a1 1 0 011.414 0L10 8.586l2.293-2.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" />
                     </svg>

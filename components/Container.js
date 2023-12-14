@@ -14,7 +14,7 @@ const Container = ({ startups, searchQuery }) => {
     const [error, setError] = useState("");
     const [industry, setIndustry] = useState(null);
     const handleSearch = async () => {
-        if(search) {
+        if (search) {
             try {
                 setLoading(true)
                 setError("")
@@ -26,7 +26,7 @@ const Container = ({ startups, searchQuery }) => {
                 console.error(error);
                 setError("Something went wrong. Please try again.")
             }
-        
+
         } else {
             return;
         }
@@ -72,7 +72,7 @@ const Container = ({ startups, searchQuery }) => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
                 {!loading && startupsList.map((startup) => (
                     <Card key={startup._id} startup={startup} />
-                ).filter((startup) => startup.industryVertical === industry))}
+                )).filter((startup) => startup.industryVertical === industry)}
                 {loading && <p>Loading...</p>}
                 {error && <p>{error}</p>}
             </div>

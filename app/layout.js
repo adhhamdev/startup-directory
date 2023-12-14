@@ -7,7 +7,7 @@ export const metadata = {
   generator: 'Next.js',
   applicationName: 'Startup Directory Web App',
   keywords: ['startup', 'directory', 'web', 'app'],
-  authors: [{ name: 'Adhham Dev', url: 'https://adhhamdev.netlify.app', email: 'msmadhhamg@gmail.com', tel: '0770355887'}],
+  authors: [{ name: 'Adhham Dev', url: 'https://adhhamdev.netlify.app', email: 'msmadhhamg@gmail.com', tel: '0770355887' }],
   creator: 'Adhham Dev',
   publisher: 'Adhham Dev',
   formatDetection: {
@@ -16,7 +16,7 @@ export const metadata = {
   },
 }
 
-export const generateViewport = () => ({themeColor: '#000000', initialScale: 1, viewportFit: 'cover'})
+export const generateViewport = () => ({ themeColor: '#000000', initialScale: 1, viewportFit: 'cover' })
 
 export default function RootLayout({ children }) {
   return (

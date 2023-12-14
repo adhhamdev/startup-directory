@@ -5,9 +5,9 @@ export default async function Home() {
   const startups = await getAllStartups();
   const searchQuery = async (searchTerm) => {
     "use server"
-    const startups = await Startup.search({search: searchTerm}).limit(5)
+    const startups = await Startup.search({ search: searchTerm }).limit(5)
     return startups
-}
+  }
   return (
     <main>
       <h1 className="text-4xl mx-4 my-4 text-blue-500">Startup Directory.</h1>
