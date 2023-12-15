@@ -4,8 +4,9 @@ const ChoiceChips = ({investmentTypesList, selectedInvestmentType, setSelectedIn
         return self.findIndex(item => item.toLowerCase() === lowerCaseValue) === index;
     });
     return (
-        <div 
-            style={{overflowX: "auto", overflowY: "hidden"}}
+        <div
+            // horizontal scrolling for chips
+            className="choiceChips flex flex-nowrap overflow-x-auto overflow-y-hidden whitespace-nowrap"
         >
             <button
                 type="button"
