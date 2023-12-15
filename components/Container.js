@@ -82,7 +82,7 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
             <div className="flex my-2">
                 <div className="flex flex-row mx-4 gap-4">
                     <Dropdown industriesList={industriesList} selectedIndustry={selectedIndustry} setSelectedIndustry={setSelectedIndustry} />
-                    <ChoiceChips investmentTypesList={investmentTypes} selectedInvestmentType={selectedInvestmentType} setSelectedInvestmentType={setSelectedInvestmentType} />
+                    <ChoiceChips investmentTypesList={investmentTypesList} selectedInvestmentType={selectedInvestmentType} setSelectedInvestmentType={setSelectedInvestmentType} />
                 </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">

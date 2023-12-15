@@ -1,5 +1,6 @@
 import Container from "@/components/Container";
 import { getAllStartups, searchQuery, getAllIndustries, getAllInvestmentTypes } from "@/lib/db";
+
 export default async function Home() {
   const startups = await getAllStartups();
   const industries = await getAllIndustries();

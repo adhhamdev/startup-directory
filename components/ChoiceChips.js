@@ -5,7 +5,6 @@ const ChoiceChips = ({investmentTypesList, selectedInvestmentType, setSelectedIn
     });
     return (
         <div
-            // horizontal scrolling for chips
             className="choiceChips flex flex-nowrap overflow-x-auto overflow-y-hidden whitespace-nowrap"
         >
             <button

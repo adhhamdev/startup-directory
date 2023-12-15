@@ -21,7 +21,9 @@ export const generateViewport = () => ({ themeColor: '#000000', initialScale: 1,
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>{children}</body>
+      <body className={poppins.className}>
+        {children}
+      </body>
     </html>
   )
 }
