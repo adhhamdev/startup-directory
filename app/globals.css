@@ -5,6 +5,9 @@
 .choiceChips::-webkit-scrollbar {
     display: none;
 }
+.choiceChips::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -18,8 +21,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 30px;
+  background: #3b82f6;
 }
 
 ::-webkit-scrollbar-thumb:hover {

@@ -1,9 +1,8 @@
-import { useState } from "react";
-
-const Modal = ({startup}) => {
-  const [isOpen, setIsOpen] = useState(false);
+import companyIcon from '/company.svg'
+import locationIcon from '/location.svg'
+const Modal = ({ startup, setIsModalOpen }) => {
   return (
-    <div className={`fixed z-10 inset-0 overflow-y-auto1 ${!isOpen && 'hidden'}`}>
+    <div className={`fixed z-10 inset-0 overflow-y-auto h-screen`}>
       <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
 
         <div className="fixed inset-0 transition-opacity" aria-hidden="true">
@@ -20,12 +19,29 @@ const Modal = ({startup}) => {
             <div className="sm:flex sm:items-start">
 
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
-                <h3 className="text-lg leading-6 font-medium text-gray-900" id="modal-headline">
-                  Full Details
+                <h3 className="flex items-center text-lg leading-6 font-medium text-gray-900" id="modal-headline">
+                  <companyIcon />
+                  <span className="pl-1">{startup.StartupName}</span>
                 </h3>
                 <div className="mt-2">
+                  <p className="flex items-center text-sm text-gray-500">
+                    <locationIcon />
+                    <span className="pl-1">{startup.CityLocation}</span>
+                  </p>
                   <p className="text-sm text-gray-500">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam quo totam eius aperiam dolorum.
+                    {startup.Date}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    {startup.AmountInUSD}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    {startup.IndustryVertical}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    {startup.InvestmentType}
+                  </p>
+                  <p className="text-sm text-gray-500">
+                    {startup.InvestorsName}
                   </p>
                 </div>
               </div>
@@ -33,7 +49,7 @@ const Modal = ({startup}) => {
           </div>
 
           <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-            <button type="button" className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm">
+            <button type="button" className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-500 text-base font-medium text-white hover:bg-blue-700 focus:outline-none sm:ml-3 sm:w-auto sm:text-sm" onClick={() => setIsModalOpen(false)}>
               Close
             </button>
           </div>

@@ -18,7 +18,7 @@ export const metadata = {
 
 export const generateViewport = () => ({ themeColor: '#000000', initialScale: 1, viewportFit: 'cover' })
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, modal }) {
   return (
     <html lang="en">
       <body className={poppins.className}>
