@@ -29,11 +29,11 @@ const Modal = ({ startup, setIsModalOpen }) => {
               <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                 {startup.StartupName ? (
                   <h3
-                    className="flex items-center text-lg leading-6 font-medium text-gray-900"
+                    className="flex items-center text-lg leading-6 font-medium text-gray-900 mb-4"
                     id="modal-headline"
                   >
                     <BuildingOfficeIcon className="w-10" />
-                    <span className="pl-1 text-4xl">{startup.StartupName} #{startup.SNo}</span>
+                    <span className="pl-1 text-4xl">{startup.StartupName} <span className='text-gray-500 text-xl'>#{startup.SNo}</span></span>
                   </h3>
                 ) : (
                   <h3
@@ -72,6 +72,14 @@ const Modal = ({ startup, setIsModalOpen }) => {
                       <WrenchIcon className="w-6" />
                       <span className="pl-2 text-1xl">
                         {startup.IndustryVertical}
+                      </span>
+                    </p>
+                  )}
+                  {startup.SubVertical && (
+                    <p className="flex items-center pb-2 text-sm text-gray-500">
+                      <WrenchIcon className="w-6" />
+                      <span className="pl-2 text-1xl">
+                        {startup.SubVertical}
                       </span>
                     </p>
                   )}
