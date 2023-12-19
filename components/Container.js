@@ -39,6 +39,7 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
     try {
       setError('');
       const res = await searchQuery(search);
+      console.log(res)
       setStartupsList(res);
     } catch (error) {
       console.error(error);
