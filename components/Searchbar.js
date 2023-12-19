@@ -6,7 +6,7 @@ const Searchbar = ({ reset, handleSearch, search, setSearch }) => {
 
   return (
     <div>
-      <form className="flex flex-row mx-4 gap-4" action={handleSearch}>
+      <form className="flex flex-row mx-4 gap-4" action={handleSearch} name="search">
         <input
           className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
           type="text"

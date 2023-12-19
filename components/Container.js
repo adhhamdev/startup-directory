@@ -68,6 +68,7 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
   };
 
   const handleModal = (startup) => {
+    console.log(startup);
     setModalStartup(startup);
     setIsModalOpen(true);
   };
