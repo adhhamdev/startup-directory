@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Dropdown from '@/components/Dropdown';
 import Card from '@/components/Card';
 import Searchbar from '@/components/Searchbar';
@@ -17,6 +17,10 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
   const [error, setError] = useState('');
   const industriesList = industries || [];
   const investmentTypesList = investmentTypes || [];
+
+  useEffect(() => {
+    console.log(startupsList)
+  }, [startupsList])
 
   /**
    * Handles the search functionality.
