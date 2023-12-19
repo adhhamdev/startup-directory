@@ -6,9 +6,8 @@ const Card = ({ startup, handleModal }) => {
         ">
             <div>
                 <h3 className="text-xl font-medium text-gray-700">{startup.StartupName}</h3>
+                <p className="my-2">{startup.InvestorsName}</p>
                 <p className="text-gray-500 my-2">{startup.CityLocation}</p>
-                <p className="text-gray-500 my-2">{startup.Date}</p>
-                <p className="text-gray-500 my-2">{startup.AmountInUSD}</p>
             </div>
             <button className="text-blue-500 font-bold hover:underline" onClick={() => handleModal(startup)}>Read more</button>
         </div>
