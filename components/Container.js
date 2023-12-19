@@ -98,11 +98,9 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
           />
         </div>
       </div>
-      <div className='ml-5 mt-2'>
+      <div className="ml-5 mt-4 px-4 border-l-4 border-blue-500 ">
         {search && (
-          <p className="text-gray-500">
-            Search for &quot;{search}&quot;
-          </p>
+          <p className="text-gray-500">Search for &quot;{search}&quot;</p>
         )}
         {error && <p className="text-red-500">{error}</p>}
         <div className="text-gray-500">

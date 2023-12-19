@@ -23,10 +23,9 @@ export default async function Home() {
         industries={industries}
         investmentTypes={investmentTypes}
       />
-      {/* fab button to navigate to startup/new */}
       <Link href="/startup/new">
         <button
-          className="fixed bottom-10 right-10 w-16 h-16 text-white bg-blue-500 rounded-full hover:bg-blue-700 shadow-xl"
+          className="flex items-center fixed bottom-10 right-10 px-5 text-white bg-blue-500 rounded-full hover:bg-blue-700 shadow-xl"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -42,6 +41,7 @@ export default async function Home() {
               d="M12 6v6m0 0v6m0-6h6m-6 0H6"
             />
           </svg>
+          New Startup
         </button>
       </Link>
     </main>
