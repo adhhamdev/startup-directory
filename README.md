@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a directory for startups. It provides information about various startups, their services, contact information, and more.
+This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a Satrtup too.
 
 ## Installation
 
@@ -11,10 +11,6 @@ To install this project, follow these steps:
 1. Clone the repository: `git clone https://github.com/adhhamdev/startup-directory.git`
 2. Navigate to the project directory: `cd startup-directory`
 3. Install the dependencies: `npm install`
-
-## Usage
-
-
 
 ## Contributing
 

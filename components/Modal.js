@@ -6,6 +6,7 @@ import {
   WrenchIcon,
   BanknotesIcon,
   UserIcon,
+  TagIcon
 } from '@heroicons/react/24/solid';
 
 const Modal = ({ startup, setIsModalOpen }) => {
@@ -82,7 +83,7 @@ const Modal = ({ startup, setIsModalOpen }) => {
                   )}
                   {startup.SubVertical && (
                     <p className="flex items-center pb-2 text-sm text-gray-500">
-                      <WrenchIcon className="w-6" />
+                      <TagIcon className="w-6" />
                       <span className="pl-2 text-1xl">
                         {startup.SubVertical}
                       </span>
