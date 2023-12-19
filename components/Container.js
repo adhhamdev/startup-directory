@@ -103,9 +103,9 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
           <p className="text-gray-500">Search for &quot;{search}&quot;</p>
         )}
         {error && <p className="text-red-500">{error}</p>}
-        <div className="text-gray-500">
+        {startupsList && <div className="text-gray-500">
           <p>Showing {startupsList.length} results</p>
-        </div>
+        </div>}
         <div className="text-gray-500">
           <p>Click on a card to see more details</p>
         </div>
