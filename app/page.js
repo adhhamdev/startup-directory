@@ -24,9 +24,7 @@ export default async function Home() {
         investmentTypes={investmentTypes}
       />
       <Link href="/startup/new">
-        <button
-          className="flex items-center fixed bottom-10 right-10 px-5 text-white bg-blue-500 rounded-full hover:bg-blue-700 shadow-xl"
-        >
+        <button className="flex items-center fixed bottom-10 right-10 px-5 text-white bg-blue-500 rounded-full hover:bg-blue-700 shadow-xl">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="w-10 h-10 mx-auto my-3"

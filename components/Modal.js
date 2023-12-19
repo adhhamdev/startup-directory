@@ -33,7 +33,12 @@ const Modal = ({ startup, setIsModalOpen }) => {
                     id="modal-headline"
                   >
                     <BuildingOfficeIcon className="w-10" />
-                    <span className="pl-1 text-4xl">{startup.StartupName} <span className='text-gray-500 text-xl'>#{startup.SNo}</span></span>
+                    <span className="pl-1 text-4xl">
+                      {startup.StartupName}{' '}
+                      <span className="text-gray-500 text-xl">
+                        #{startup.SNo}
+                      </span>
+                    </span>
                   </h3>
                 ) : (
                   <h3

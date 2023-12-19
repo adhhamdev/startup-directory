@@ -1,4 +1,3 @@
-
 const Searchbar = ({ reset, handleSearch, search, setSearch }) => {
   const handleChange = (e) => {
     setSearch(e.target.value);
@@ -17,7 +16,13 @@ const Searchbar = ({ reset, handleSearch, search, setSearch }) => {
           name="search"
           autoFocus
         />
-        <button type="reset" className="border border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded" onClick={reset}>Reset</button>
+        <button
+          type="reset"
+          className="border border-blue-500 hover:bg-blue-100 text-blue-500 font-bold py-2 px-4 rounded"
+          onClick={reset}
+        >
+          Reset
+        </button>
         <button
           aria-label="Search Button"
           type="submit"

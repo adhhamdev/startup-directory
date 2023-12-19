@@ -1,4 +1,4 @@
-import { newStartup } from "@/lib/db";
+import { newStartup } from '@/lib/db';
 
 const page = () => {
   return (
@@ -13,7 +13,11 @@ const page = () => {
         </p>
         <div className="flex flex-wrap justify-around max-w-4xl mt-6 sm:w-full">
           <div className="flex flex-col items-center justify-center p-6 mt-6 text-left border-2 border-gray-300 rounded-xl">
-            <form className="w-full max-w-lg" action={newStartup} name="new-startup">
+            <form
+              className="w-full max-w-lg"
+              action={newStartup}
+              name="new-startup"
+            >
               <div className="flex flex-wrap -mx-3 mb-6">
                 <div className="w-full px-3 mb-6 md:mb-0">
                   <label

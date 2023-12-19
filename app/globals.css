@@ -3,10 +3,11 @@
 @tailwind utilities;
 
 .choiceChips::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
+
 .choiceChips::-webkit-scrollbar-thumb {
-    border-radius: 30px;
+  border-radius: 30px;
 }
 
 ::-webkit-scrollbar {

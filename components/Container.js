@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Dropdown from '@/components/Dropdown';
 import Card from '@/components/Card';
 import Searchbar from '@/components/Searchbar';
@@ -17,11 +17,6 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
   const [error, setError] = useState('');
   const industriesList = industries || [];
   const investmentTypesList = investmentTypes || [];
-
-  useEffect(() => {
-    console.log(startupsList)
-  }, [startupsList])
-
   /**
    * Handles the search functionality.
    * calls the searchQuery function with the search query,
@@ -39,7 +34,6 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
     try {
       setError('');
       const res = await searchQuery(search);
-      console.log(res)
       setStartupsList(res);
     } catch (error) {
       console.error(error);
@@ -108,9 +102,11 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
           <p className="text-gray-500">Search for &quot;{search}&quot;</p>
         )}
         {error && <p className="text-red-500">{error}</p>}
-        {startupsList && <div className="text-gray-500">
-          <p>Showing {startupsList.length} results</p>
-        </div>}
+        {startupsList && (
+          <div className="text-gray-500">
+            <p>Showing {startupsList.length} results</p>
+          </div>
+        )}
         <div className="text-gray-500">
           <p>Click on a card to see more details</p>
         </div>
