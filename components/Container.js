@@ -31,6 +31,11 @@ const Container = ({ startups, searchQuery, industries, investmentTypes }) => {
    * @returns {Promise<void>}
    */
   const handleSearch = async () => {
+    // handle empty search query
+    if (!search) {
+      setStartupsList(startups);
+      return;
+    }
     try {
       setError('');
       const res = await searchQuery(search);
