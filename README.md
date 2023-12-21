@@ -40,12 +40,12 @@ If you want to contribute to this project, please follow these steps:
 **Adhham Safwan**
 
 ### Social
-* [Website]()
-* [X]()
-* [LinkedIn]()
-* [Showcase]()
-* [Dev.to]()
-* [Daily.dev]()  
+* [Website](https://adhhamdev.netlify.app)
+* [X](https://twitter.com/AdhhamDev)
+* [LinkedIn](https://www.linkedin.com/in/adhham)
+* [Showcase](https://www.showwcase.com/adhhamdev)
+* [Dev.to](https://dev.to/adhhamdev)
+* [Daily.dev](https://app.daily.dev/adhhamsafwan)  
 
 ## License
 
