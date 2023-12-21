@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a *Startup* too.
+This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a **Startup** too.
 
 ## Key Features
 
@@ -37,7 +37,7 @@ If you want to contribute to this project, please follow these steps:
 5. Open a pull request
 
 ## Author
-    **Adhham Safwan**
+**Adhham Safwan**
 
 ## License
 
