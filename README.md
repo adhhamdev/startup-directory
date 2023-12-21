@@ -2,17 +2,20 @@
 
 ## Description
 
-This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a Satrtup too.
+This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a *Startup* too.
 
 ## Key Features
 
- • Filter Startups by Industry and Investment Type.
+ * Filter Startups by Industry and Investment Type.
 
- • Search for any Startups.
+ * Search for any Startups.
 
- • View full details of a Startup.
+ * View full details of a Startup.
 
- • Create and upload your own Startup.
+ * Create and upload your own Startup.
+
+## Screenshot
+!["Startup Directory Screenshot](link "Startup Directory Screenshot")
 
 
 ## Installation
@@ -32,6 +35,9 @@ If you want to contribute to this project, please follow these steps:
 3. Commit your changes: `git commit -m 'Add some feature'`
 4. Push to the branch: `git push origin feature/<your-feature-name>`
 5. Open a pull request
+
+## Author
+    **Adhham Safwan**
 
 ## License
 
