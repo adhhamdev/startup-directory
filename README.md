@@ -15,7 +15,7 @@ This project is a directory for startups. It provides information about various 
  * Create and upload your own Startup.
 
 ## Screenshot
-!["Startup Directory Screenshot](link "Startup Directory Screenshot")
+!["Startup Directory Screenshot](/_VzciJ_xEe6PwwJCrBEACA.png "Startup Directory Screenshot")
 
 
 ## Installation
