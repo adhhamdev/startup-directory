@@ -4,6 +4,17 @@
 
 This project is a directory for startups. It provides information about various startups, their services, and more. You can create and upload a Satrtup too.
 
+## Key Features
+
+ • Filter Startups by Industry and Investment Type.
+
+ • Search for any Startups.
+
+ • View full details of a Startup.
+
+ • Create and upload your own Startup.
+
+
 ## Installation
 
 To install this project, follow these steps:
