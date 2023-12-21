@@ -37,7 +37,15 @@ If you want to contribute to this project, please follow these steps:
 5. Open a pull request
 
 ## Author
-**Adhham Safwan**
+    **Adhham Safwan**
+
+### Social
+    [Website]()
+    [X]()
+    [LinkedIn]()
+    [Showcase]()
+    [Dev.to]()
+    [Daily.dev]()  
 
 ## License
 
