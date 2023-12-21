@@ -15,7 +15,7 @@ This project is a directory for startups. It provides information about various 
  * Create and upload your own Startup.
 
 ## Screenshot
-!["Startup Directory Screenshot](/_VzciJ_xEe6PwwJCrBEACA.png "Startup Directory Screenshot")
+!["Startup Directory Screenshot"](/_VzciJ_xEe6PwwJCrBEACA.png "Startup Directory Screenshot")
 
 
 ## Installation
@@ -37,6 +37,8 @@ If you want to contribute to this project, please follow these steps:
 5. Open a pull request
 
 ## Author
+!["Adhham's Dev Card"](/devcard.svg)
+
 **Adhham Safwan**
 
 ### Social
