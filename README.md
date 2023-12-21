@@ -1,5 +1,4 @@
 # Startup Directory
-===================
 
 ## Description
 
@@ -39,7 +38,6 @@ If you want to contribute to this project, please follow these steps:
 
 ## Author
 **Adhham Safwan**
------------------
 
 ### Social
 * [Website]()
